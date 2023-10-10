@@ -1,0 +1,9 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 85px);
+    justify-items: end;
+}
+li{
+    list-style-type: none;
+    font-size:20px;
+}
