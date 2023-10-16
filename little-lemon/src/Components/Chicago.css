@@ -1,0 +1,29 @@
+.container4{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-right: 20%;
+}
+
+.Chicago{
+    width: 500px;
+    margin: 50px;
+    margin-left: 20%;
+}
+
+.Chicagoimg{
+    width: 300px;
+    margin: 50px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -o-border-radius: 16px;
+    border-radius: 16px;
+}
+
+/*@media (max-width:500px){
+    .Chicago{
+        display: block;
+    }
+    .Chicagoimg{
+        display: block;
+    }
+}*/

@@ -1,0 +1,1 @@
+/* the component for the table reservations page*/
