@@ -1,6 +1,7 @@
 import React from 'react';
-import './CallToAction.css';
+import '../Styles/CallToAction.css';
 import restauranfood from'../restauranfood.jpg';
+import {Link} from 'react-router-dom';
 /* sometimes referred to as the jumbotron or the hero, this component is the call-to-action section that guides the user to click a call-to-action button while enticing them to do so in as few words as possible */
 
 function CallToAction() {
@@ -21,7 +22,7 @@ function CallToAction() {
                     twist.
                 </p>
                 <br/>
-                <button>Reserve a table</button>
+                <button><Link to="/Order"style={{color:'#000'}}>Reserve a table</Link></button>
             </section>
             <section className='desc-img'>
                     <img src={restauranfood} alt='chefFood' className='imgHero'/>

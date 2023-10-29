@@ -1,0 +1,38 @@
+.container4{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.Chicago h1{
+    font-size: 220%;
+    margin-bottom: 0%;
+}
+
+.Chicago h2{
+    margin-bottom: 0%;
+}
+
+.Chicagoimg{
+    width: 80%;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -o-border-radius: 16px;
+    border-radius: 16px;
+}
+
+@media (max-width:800px){
+
+    .container4{
+        display: block;
+        padding: 8vw;
+    }
+    .Chicago{
+        width: 80vw;
+    }
+    .Chicagoimg{
+        width: 80vw;
+    }
+}

@@ -1,0 +1,150 @@
+
+.Specials{
+    width: 90vw;
+    padding: 10%;
+    transition: linear 0.4s;
+    padding: 5%;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    justify-content: center;
+    transition: linear 0.2s;
+}
+
+
+.heading1{
+    text-align: center;
+}
+
+.menuB{
+    grid-area: button;
+    margin-left: 20%;
+}
+
+#sub-header h1{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.cards p{
+    margin: 10px;
+}
+
+h3 , h4 , span {
+    margin: 10px;
+}
+h4{
+    color: #ee9972;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.card{
+    border: 1px solid #cccccc;
+    margin: 10px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -o-border-radius: 16px;
+    border-radius: 16px;
+}
+.card:hover{
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardimg{
+    width: 14.25rem;
+    height: 160px;
+    -webkit-border-top-right-radius: 16px;
+    -moz-border-top-right-radius: 16px;
+    -o-border-top-right-radius: 16px;
+    border-top-right-radius: 16px;
+    -webkit-border-top-left-radius: 16px;
+    -moz-border-top-left-radius: 16px;
+    -o-border-top-left-radius: 16px;
+    border-top-left-radius: 16px;
+    grid-area: cardimg;
+}
+.card p{
+    padding: 10px;
+    grid-area: par;
+}
+
+.cardFooter{
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-bottom: 2%;
+    margin-left:2%;
+}
+
+.delevery{
+    width: 20px;
+}
+
+h3, h4{
+    display: inline;
+    padding-bottom: 20px;
+}
+#card2 p{
+    padding-bottom: 30px;
+}
+@media (max-width:800px){
+    .Specials{
+        width:90vw;
+        margin: 5%;
+    }
+    .cards{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+    .card{
+        width: 80vw;
+        padding: 2%;
+    }
+
+    .cardimg{
+        display: grid;
+        position:sticky;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -o-border-radius: 16px;
+        border-radius: 16px;
+        position: absolute;
+        width: 100px;
+        height: 80px;
+        margin-left: 60vw;
+        margin-top: 40px;
+    }
+    .card p{
+        width: 70%;
+    }
+    .cardFooter{
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: repeat(2,120px);
+        color: #495e49;
+    }
+}
+/*greeek salad part*/
+.gsb{
+    padding: 3%;
+}
+.gSImg{
+    width: 100vw;
+}
+.gSh2{
+    font-size: 30px;
+}
+.gSh3{
+    font-size: 23px;
+    font-weight: 400;
+    color:#ee9972;
+}
+.gSimg{
+    width:30px;
+    margin-bottom: -1%;
+}

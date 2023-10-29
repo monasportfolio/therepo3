@@ -1,8 +1,19 @@
 import React from 'react';
-/* the component for the homepage */
+import CallToAction from './CallToAction';
+import Specials from './Specials';
+import CustomersSay from './CustomersSay';
+import Chicago from './Chicago';
+import '../Styles/HomePage.css';
 
 function HomePage (){
-    return <h1>Home</h1>
+    return(
+        <main>
+            <CallToAction />
+            <Specials />
+            <CustomersSay />
+            <Chicago />
+        </main>
+    )
 }
 
 export default HomePage;

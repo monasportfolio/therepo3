@@ -2,14 +2,15 @@ import React from 'react';
 import './App.css';
 import Nav from './Components/Nav.js';
 import logolemon from './logolemon.svg';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './Components/HomePage.js';
-import About from './Components/About.js';
-import CallToAction from './Components/CallToAction';
 import Specials from './Components/Specials';
-import CustomersSay from './Components/CustomersSay.js';
-import Chicago from './Components/Chicago';
+import About from './Components/About.js';
 import BookingPage from './Components/BookingPage';
+import Footer from './Components/Footer';
+import GreekSalad from './Components/GreekSalad';
+import Login from './Components/Login';
+import Success from './Components/Success';
 
 function App() {
   return (
@@ -19,48 +20,17 @@ function App() {
             <img src={logolemon} alt="Logo" className='logo'/>
             <Nav />
           </header>
-          <main>
-            <CallToAction />
-            <Specials />
-            <CustomersSay />
-            <Chicago />
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/About" element={<About />} />
-              <Route path="/Menu" element={<Specials />} />
-              <Route path="Reservation" element={<BookingPage />} />
-              <Route path="/Order" element={<BookingPage />} />
-              <Route path="/Login" element={< HomePage/>} />
-            </Routes>
-          </main>
-          <footer>
-            <img src={logolemon} alt='Logo' className='FooterLogo'/>
-            <section>
-              <p className='header'>Contact us:</p>
-              <p>Pone No:000-000-00</p>
-              <p>Email:littleLemon@gmail.com</p>
-            </section>
-            <section className='footnav'>
-              <p className='header'>Doormat:</p>
-              <br/>
-              <Link to="/">Home</Link>
-              <Link to="/About">About</Link>
-              <Link to="/Menu">Menu</Link>
-              <Link to="/Reservation">Reservation</Link>
-              <Link to="/Order">Order Online</Link>
-              <Link to="/Login">Login</Link>
-            </section>
-            <section>
-              <p className='header'>Our social media:</p>
-              <p>Instagram
-              <br/>
-              X
-              <br/>
-              Facebooks
-              <br/>
-              Tiktok</p>
-            </section>
-          </footer>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Menu" element={<Specials />} />
+            <Route path="Reservation" element={<BookingPage />} />
+            <Route path="/Order" element={<BookingPage />} />
+            <Route path="/Login" element={< Login/>} />
+            <Route path='/greekSalad' element={<GreekSalad />} />
+            <Route path='/Success' element={<Success />}/>
+          </Routes>
+          <Footer />
       </div>
     </Router>
   );
