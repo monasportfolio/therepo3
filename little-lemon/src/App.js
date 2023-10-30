@@ -6,11 +6,11 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './Components/HomePage.js';
 import Specials from './Components/Specials';
 import About from './Components/About.js';
-import BookingPage from './Components/BookingPage';
 import Footer from './Components/Footer';
 import GreekSalad from './Components/GreekSalad';
 import Login from './Components/Login';
 import Success from './Components/Success';
+import BookingForm from './Components/BookingForm';
 
 function App() {
   return (
@@ -24,8 +24,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/About" element={<About />} />
             <Route path="/Menu" element={<Specials />} />
-            <Route path="Reservation" element={<BookingPage />} />
-            <Route path="/Order" element={<BookingPage />} />
+            <Route path="Reservation" element={<BookingForm />} />
+            <Route path="/Order" element={<BookingForm />} />
             <Route path="/Login" element={< Login/>} />
             <Route path='/greekSalad' element={<GreekSalad />} />
             <Route path='/Success' element={<Success />}/>

@@ -6,7 +6,8 @@ import Mario from '../Mario.jpg';
 import restaurant from '../restaurant.jpg';
 import Adrian from '../restaurant chef B.jpg';
 
-export default function BookingForm(props) {
+
+export default function BookingForm() {
 
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
@@ -15,13 +16,11 @@ export default function BookingForm(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.submitForm(e);
         alert(`Date: ${date}, Time: ${time}, Guests: ${guests}, Occasion:${occasion} `);
     };
 
     function handleChange(e){
         setDate(e);
-        //props.dispatch(e);
     }
     function handleSelect(e){
         setTime(e.target.value)
@@ -74,7 +73,7 @@ export default function BookingForm(props) {
                     <option>Other</option>
                 </select>
             </div>
-            <input type='submit' value={"Make Your reservation"} className=' box box5'/>
+            <input type='submit' value={"Make Your reservation"} className=' box box5' />
         </form>
         <div className='imgsForm'>
             <img src={Mario} alt='ing of Mario and adrian'className='imgForm'/>
